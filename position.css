@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #666;
+    margin-top: 20px;
+}
+
+p, ul, ol {
+    color: #333;
+    line-height: 1.5;
+}
+.row {
+    display: flex;
+    margin-bottom: 10px; /* Add margin between rows */
+  }
+  .column {
+    width: 30%;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    margin-right: 5px; /* Add margin between columns */
+    box-shadow: 0 0 10px rgba(12, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .column:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+  }
+  .spacer {
+    width: 16.66%; /* Set width for spacer columns */
+  }
+  img {
+    width: 100%; /* Adjust the width of the image */
+    height: auto;
+    margin-bottom: 10px; /* Add margin below the image */
+  }
+   /* Style the audio controls */
+   audio::-webkit-media-controls {
+    display: none; /* Hide the default controls */
+}
+
+/* Style the container for the audio player */
+.audio-container {
+    position: relative;
+    width: 50px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+}
+
+/* Style the custom play button */
+.play-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Change background color as needed */
+    border: none;
+    border-radius: 2px; /* Adjust border radius as needed */
+    cursor: pointer;
+}
+
+/* Style the play button icon */
+.play-button-icon {
+    width: 50%; /* Adjust size of the icon */
+    height: 50%; /* Adjust size of the icon */
+    margin: 5%;/* Center the icon within the button */
+    fill: #fff;
+  }

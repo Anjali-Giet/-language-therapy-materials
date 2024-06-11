@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>छात्र संसाधन हब</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript समीक्षा के लिए एक साधारण फ़ंक्शन
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+     <style>
+         .container {
+            width: 180px; 
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }  
+         
+        
+        
+        .container2 {
+            width: 380px; 
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container h2 {
+            font-size: 20px;
+            color: #333333;
+        }
+        
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .container ul li {
+            margin-bottom: 10px;
+        }
+        
+        .container ul li a {
+            text-decoration: none;
+            color: #0066cc;
+            transition: color 0.3s ease;
+        }
+        
+        .container ul li a:hover {
+            color: #004080;
+        }
+        
+     </style>
+</head>
+<body>
+
+<header>
+    <h1>छात्र संसाधन हब</h1>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="position.html">स्थिति स्तर</a></li>
+            <!-- <li><a href="phoneme.html">ध्वनि स्तर</a></li> -->
+            <li><a href="picture.html">तस्वीर स्तर</a></li>
+            <li><a href="progress.html">प्रगति ट्रैकिंग</a></li>
+            <li><a href="resources.html">संसाधन</a></li>
+            <!-- <li><a href="contact.html">संपर्क करें</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<section id="categories">
+    <div class="container">
+        <h2>अन्वेषण करें</h2>
+        <ul>
+            <li><a href="#" onclick="toggleSection('academics')">तुक</a></li>
+            <li><a href="#" onclick="toggleSection('career')">कविता</a></li>
+            <li><a href="#" onclick="toggleSection('wellness')">कहानी</a></li>
+            <!-- जरूरत के अनुसार और श्रेणियाँ जोड़ें -->
+        </ul>
+    </div>
+</section>
+
+<section id="academics" style="display: none;">
+    <div class="container2">
+        <h2>तुक</h2>
+        <ul>
+            <li><a href="https://www.collinsdictionary.com/hi/dictionary/english-hindi/rhyme">पहला तुक</a> - मुफ्त ऑनलाइन पाठ्यक्रम, सबक और अभ्यास</li>
+            <li><a href="https://dict.hinkhoj.com/rhyme-meaning-in-hindi.words">दूसरा तुक</a> - प्रमुख विश्वविद्यालयों से ऑनलाइन पाठ्यक्रम</li>
+            <li><a href="https://www.shabdkosh.com/hi/dictionary/english-hindi/rhymes/rhymes-meaning-in-hindi">तीसरा तुक</a> - कोड को अंतर्वासनात्मक रूप से सीखें</li>
+            <!-- और शैक्षणिक संसाधनों को जोड़ें जरूरत के अनुसार -->
+        </ul>
+    </div>
+</section>
+
+<section id="career" style="display: none;">
+    <div class="container2">
+        <h2>कविता</h2>
+        <ul>
+            <li><a href="https://www.amarujala.com/kavya/kavita">पहला कविता</a> - पेशेवर नेटवर्किंग प्लेटफ़ॉर्म</li>
+            <li><a href="https://www.hindikavykosh.in/2023/05/top-famous-hindi-poems-in-hindi.html">दूसरा कविता</a> - नौकरी की खोज इंजन</li>
+            <li><a href="https://www.amarujala.com/kavya/viral-kavya/the-most-viral-hindi-poetry">तीसरा कविता</a> - कंपनी समीक्षा और नौकरी की सूची</li>
+            <!-- और करियर संसाधनों को जोड़ें जरूरत के अनुसार -->
+        </ul>
+    </div>
+</section>
+
+<section id="wellness" style="display: none;">
+    <div class="container2">
+        <h2>कहानी</h2>
+        <ul>
+            <li><a href="https://www.momjunction.com/hindi/kahaniya/">पहला कहानी</a> - ध्यान और माइंडफुलनेस ऐप</li>
+            <li><a href="https://www.grihshobha.in/story">दूसरा कहानी</a> - आपके आहार और व्यायाम को ट्रैक करें</li>
+            <li><a href="https://storyhindi.net/">तीसरा कहानी</a> - सोने और आराम की ऐप</li>
+            <!-- और स्वास्थ्य संसाधनों को जोड़ें जरूरत के अनुसार -->
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="containe">
+        <p>&copy; २०२४ छात्र संसाधन हब। सभी अधिकार सुरक्षित हैं।</p>
+    </div>
+</footer>
+
+</body>
+</html>

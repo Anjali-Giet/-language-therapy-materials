@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devanagari Letters Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .column {
+      width: 16.66%; /* Set width for each column */
+      padding: 10px;
+      border: 1px solid #000;
+      box-sizing: border-box; /* Include padding and border in the width */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+    img {
+      width: 80%; /* Adjust the width of the image */
+      height: auto;
+      margin-bottom: 10px; /* Add margin below the image */
+    }
+    .progress {
+      margin-top: 20px;
+      background-color: #f9f9f9;
+      border-radius: 6px;
+      padding: 20px;
+    }
+    .progress h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .progress-item {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .progress-item span {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 10px; /* Add margin between rows */
+    }
+    .column {
+      width: 10%;
+      padding: 10px;
+      /* border: 1px solid #000; */
+      margin-right: 5px; /* Add margin between columns */
+      box-shadow: 0 0 10px rgba(12, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    .column:last-child {
+      margin-right: 0; /* Remove margin from the last column */
+    }
+    .spacer {
+      width: 16.66%; /* Set width for spacer columns */
+    }
+    img {
+      width: 100%; /* Adjust the width of the image */
+      height: auto;
+      margin-bottom: 10px; /* Add margin below the image */
+    }
+  
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+        <li><a href="about.html">हमारे बारे में</a></li>
+        <li><a href="position.html">स्थिति स्तर</a></li>
+        <li><a href="phoneme.html">ध्वनि स्तर</a></li>
+        <li><a href="picture.html">तस्वीर स्तर</a></li>
+        <li><a href="progress.html">प्रगति ट्रैकिंग</a></li>
+        <li><a href="resources.html">संसाधन</a></li>
+        <li><a href="contact.html">संपर्क करें</a></li>
+    </ul>
+</nav>
+  <div class="container">
+    <!-- <ul>
+      <li class="column" onclick="updateProgress('ka')">
+        <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क">
+        क - कुत्ता
+      </li> -->
+      <!-- Add more columns with images and text -->
+    <!-- </ul> -->
+
+    <ul>
+            
+      <div class="row">
+          <div class="column" onclick="updateProgress('ka')">क - कमल <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('kha')">ख - खरगोश <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('gya')">ग - गाना <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('gha')">घ - घर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('da')">ङ - ङकार <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('ch')">च - चिड़िया <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('cha')">छ - छाती <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('ja')">ज - जंगल <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('jha')">झ - झरना <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('jaa')">ञ - ञंजर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+        </div>
+        
+        <div class="row">
+          <div class="column" onclick="updateProgress('ta')">ट - टमाटर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('thaa')">ठ - ठोकर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('da')">ड - डमरू <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('dha')">ढ - ढिंढोरा <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('nda')">ण - नागर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('ta')">त - तम्बाखू <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('tha')">थ - थाली <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('da')">द - दरवाज़ा <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('dha')">ध - धनुष्य <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('na')">न - नदी <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+        </div>
+        
+        <div class="row">
+          <div class="column"onclick="updateProgress('pa')">प - पक्षी <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('pha')">फ - फल <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('ba')">ब - बबूल <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('bha')">भ - भालू <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('ma')">म - मछली <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('ya')">य - यक <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('ra')">र - रात <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('la')">ल - लकड़ी <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('la')">व - वन <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('sha')">श - शेर <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+        </div>
+
+        <div class="row">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="column" onclick="updateProgress('sa')">ष - षट्कौर्य <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('sa')">स - सपना <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('ha')">ह - हाथी <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg" alt="क"></div>
+          <div class="column" onclick="updateProgress('cha')">क्ष - क्षत्रिय <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('tra')">त्र  - त्रिशूल <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="column" onclick="updateProgress('gya')">ज्ञ - ज्ञानी <img src="https://img.freepik.com/premium-vector/speak-talk-icon-white-background-man-tell-black-vector-silhouette-voice-wave-from-human_820464-695.jpg"  alt="क"></div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+  </ul>
+
+    <div class="progress">
+      <h2>Progress</h2>
+      <div id="kaProgress" class="progress-item">क - कुत्ता: <span>0</span> clicks</div>
+      <div id="khaProgress" class="progress-item">ख - खरगोश: <span>0</span> clicks</div>
+      <div id="gyaProgress" class="progress-item">ग - गाना: <span>0</span> clicks</div>
+      <div id="ghaProgress" class="progress-item">घ - घर: <span>0</span> clicks</div>
+      <div id="daProgress" class="progress-item">ङ - ङकार: <span>0</span> clicks</div>
+      <div id="chProgress" class="progress-item">च - चिड़िया: <span>0</span> clicks</div>
+      <div id="chaProgress" class="progress-item">छ - छाती: <span>0</span> clicks</div>
+      <div id="jaProgress" class="progress-item">ज - जंगल: <span>0</span> clicks</div>
+      <div id="jaaProgress" class="progress-item">ञ - ञंजर: <span>0</span> clicks</div>
+      <div id="taProgress" class="progress-item">ट - टमाटर: <span>0</span> clicks</div>
+      <div id="dhaProgress" class="progress-item">ड - डमरू : <span>0</span> clicks</div>
+      <div id="ndaProgress" class="progress-item">ण - नागर : <span>0</span> clicks</div>
+      <div id="taProgress" class="progress-item">त - तम्बाखू: <span>0</span> clicks</div>
+      <div id="khaProgress" class="progress-item">थ - थाली: <span>0</span> clicks</div>
+      <div id="daProgress" class="progress-item">द - दरवाज़ा: <span>0</span> clicks</div>
+      <div id="dhaProgress" class="progress-item">ध - धनुष्य: <span>0</span> clicks</div>
+      <div id="naProgress" class="progress-item">न - नदी: <span>0</span> clicks</div>
+      <div id="paProgress" class="progress-item">प - पक्षी: <span>0</span> clicks</div>
+      <div id="phaProgress" class="progress-item">फ - फल: <span>0</span> clicks</div>
+      <div id="baProgress" class="progress-item">ब - बबूल: <span>0</span> clicks</div>
+      <div id="bhaProgress" class="progress-item">भ - भालू: <span>0</span> clicks</div>
+      <div id="maProgress" class="progress-item">म - मछली: <span>0</span> clicks</div>
+      <div id="yaProgress" class="progress-item">य - यक: <span>0</span> clicks</div>
+      <div id="raProgress" class="progress-item">र - रात : <span>0</span> clicks</div>
+      <div id="laProgress" class="progress-item">ल - लकड़ी: <span>0</span> clicks</div>
+      <div id="vaProgress" class="progress-item">व - वन: <span>0</span> clicks</div>
+      <div id="shaProgress" class="progress-item">श - शेर : <span>0</span> clicks</div>
+      <div id="saProgress" class="progress-item">ष - षट्कौर्य: <span>0</span> clicks</div>
+      <div id="saProgress" class="progress-item">स - सपना: <span>0</span> clicks</div>
+      <div id="haProgress" class="progress-item">ह - हाथी : <span>0</span> clicks</div>
+      <div id="chaProgress" class="progress-item">क्ष - क्षत्रिय: <span>0</span> clicks</div>
+      <div id="traProgress" class="progress-item">त्र  - त्रिशूल: <span>0</span> clicks</div>
+      <div id="gyaProgress" class="progress-item">ज्ञ - ज्ञानी: <span>0</span> clicks</div>
+      <!-- Add progress for other columns -->
+   
+  </div>
+
+  <script>
+    var progress = {}; // Object to store progress for each column
+
+    function updateProgress(column) {
+      if (!progress[column]) {
+        progress[column] = 0;
+      }
+      progress[column]++;
+      document.getElementById(column + 'Progress').innerHTML = `${column} - ${getColumnText(column)}: <span>${progress[column]}</span> clicks`;
+    }
+
+    function getColumnText(column) {
+      // Function to return text associated with the column
+      switch (column) {
+        case 'ka':
+          return 'कमल';
+        // Add cases for other columns
+        case 'kha':
+          return ' खरगोश';
+          case 'gya':
+          return 'गाना';
+          case 'gha':
+          return 'घर';
+          case 'da':
+          return 'ङकार';
+          case 'ch':
+          return 'चिड़िया';
+          case 'cha':
+          return 'छाती';
+          case 'ja':
+          return 'जंगल';
+          case 'jha':
+          return 'कुत्ता';
+          case 'jaa':
+          return 'ञंजर';
+          case 'ta':
+          return 'टमाटर';
+          case 'thaa':
+          return 'ठोकर ';
+          case 'da':
+          return 'डमरू';
+          case 'dha':
+          return 'ढिंढोरा ';
+          case 'nda':
+          return 'नागर';
+          case 'ta':
+          return 'तम्बाखू';
+          case 'tha':
+          return 'थाली';
+          case 'da':
+          return 'दरवाज़ा';
+          case 'dha':
+          return 'धनुष्य';
+          case 'na':
+          return 'नदी';
+          case 'pa':
+          return 'पक्षी';
+          case 'pha':
+          return 'फल';
+          case 'ba':
+          return 'बबूल';
+          case 'bha':
+          return 'भालू';
+          case 'ma':
+          return 'मछली';
+          case 'ya':
+          return 'यक';
+          case 'ra':
+          return 'रात ';
+          case 'la':
+          return 'लकड़ी';
+          case 'va':
+          return 'वन';
+          case 'sha':
+          return 'शेर ';
+          case 'sa':
+          return 'षट्कौर्य';
+          case 'saa':
+          return 'सपना';
+          case 'cha':
+          return 'क्षत्रिय';
+          case 'tra':
+          return 'त्रिशूल';
+          case 'gya':
+          return 'ज्ञानी';
+        default:
+          return '';
+      }
+    }
+  </script>
+</body>
+</html>
